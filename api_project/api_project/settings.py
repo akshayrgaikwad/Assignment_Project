@@ -79,12 +79,8 @@ WSGI_APPLICATION = 'api_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql' ,
-        'NAME': 'api',
-        'USER':'' ,
-        'PASSWORD': '',
-        'HOST' : 'DESKTOP-2USMQTR\SQLEXPRESS'
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
